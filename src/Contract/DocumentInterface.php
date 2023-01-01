@@ -6,9 +6,9 @@ namespace Syndesi\ElasticDataStructures\Contract;
 
 interface DocumentInterface
 {
-    public function getCollection(): ?string;
+    public function getIndex(): ?string;
 
-    public function setCollection(?string $collection): self;
+    public function setIndex(?string $index): self;
 
     public function getIdentifier(): mixed;
 

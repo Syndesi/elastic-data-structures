@@ -8,21 +8,21 @@ use Syndesi\ElasticDataStructures\Contract\DocumentInterface;
 
 class Document implements DocumentInterface
 {
-    private ?string $collection = null;
+    private ?string $index = null;
 
     /**
      * @var array<string, mixed>
      */
     private array $properties = [];
 
-    public function getCollection(): ?string
+    public function getIndex(): ?string
     {
-        return $this->collection;
+        return $this->index;
     }
 
-    public function setCollection(?string $collection): DocumentInterface
+    public function setIndex(?string $index): DocumentInterface
     {
-        $this->collection = $collection;
+        $this->index = $index;
 
         return $this;
     }
